@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code de Vérification</title>
+</head>
+<body>
+    <h2>Code de Vérification</h2>
+    <form action="/verify" method="POST">
+        <input type="hidden" name="username" value="{{ username }}">
+        <label for="verification_code">Code de vérification:</label><br>
+        <input type="text" id="verification_code" name="verification_code" required><br>
+        <button type="submit">Valider</button>
+    </form>
+</body>
+</html>
